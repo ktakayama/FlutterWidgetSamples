@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_samples/list/list_tile_sample.dart';
+import 'package:widget_samples/list/list_view_separated_sample.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,6 +29,7 @@ class WidgetList extends StatelessWidget {
   Widget build(BuildContext context) {
     var widgets = <String, Function()>{
       'ListTile': () => const ListTileSample(),
+      'ListView.separated': () => const ListViewSeparatedSample(),
     };
     var titles = widgets.keys.toList();
     return Scaffold(
