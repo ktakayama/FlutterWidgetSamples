@@ -31,19 +31,22 @@ class WidgetList extends StatelessWidget {
     };
     var titles = widgets.keys.toList();
     return Scaffold(
-        appBar: AppBar(title: const Text('Widget List')),
-        body: ListView.separated(
-          separatorBuilder: (BuildContext context, int index) =>
-              const Divider(),
-          padding: const EdgeInsets.all(16),
-          itemCount: widgets.length,
-          itemBuilder: (context, i) => ListTile(
-              title: Text(titles[i]),
-              onTap: () => Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) {
-                    var func = widgets[titles[i]]!;
-                    return func();
-                  }))),
-        ));
+      appBar: AppBar(title: const Text('Widget List')),
+      body: ListView.separated(
+        separatorBuilder: (BuildContext context, int index) => const Divider(),
+        padding: const EdgeInsets.all(16),
+        itemCount: widgets.length,
+        itemBuilder: (context, i) => ListTile(
+          title: Text(titles[i]),
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) {
+              var body = widgets[titles[i]]!();
+              return Scaffold(
+                  appBar: AppBar(title: Text(body.toString())), body: body);
+            }),
+          ),
+        ),
+      ),
+    );
   }
 }
