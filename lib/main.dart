@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_samples/layout/expanded_sample.dart';
+import 'package:widget_samples/layout/wrap_sample.dart';
 import 'package:widget_samples/list/list_tile_sample.dart';
 import 'package:widget_samples/list/list_view_separated_sample.dart';
 
@@ -37,6 +38,7 @@ class GroupList extends StatelessWidget {
     var widgets = [
       WidgetGroup('Layout', {
         'Expanded': () => const ExpandedSample(),
+        'Wrap': () => const WrapSample(),
       }),
       WidgetGroup('ListView', {
         'ListTile': () => const ListTileSample(),
