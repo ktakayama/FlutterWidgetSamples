@@ -3,6 +3,7 @@ import 'package:widget_samples/layout/expanded_sample.dart';
 import 'package:widget_samples/layout/wrap_sample.dart';
 import 'package:widget_samples/list/list_tile_sample.dart';
 import 'package:widget_samples/list/list_view_separated_sample.dart';
+import 'package:widget_samples/text/text_sample.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,6 +37,9 @@ class GroupList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var widgets = [
+      WidgetGroup('Text', {
+        'Text': () => const TextSample(),
+      }),
       WidgetGroup('Layout', {
         'Expanded': () => const ExpandedSample(),
         'Wrap': () => const WrapSample(),
