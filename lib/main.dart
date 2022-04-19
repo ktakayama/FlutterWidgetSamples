@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_samples/layout/expanded_sample.dart';
 import 'package:widget_samples/list/list_tile_sample.dart';
 import 'package:widget_samples/list/list_view_separated_sample.dart';
 
@@ -34,6 +35,9 @@ class GroupList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var widgets = [
+      WidgetGroup('Layout', {
+        'Expanded': () => const ExpandedSample(),
+      }),
       WidgetGroup('ListView', {
         'ListTile': () => const ListTileSample(),
         'ListView.separated': () => const ListViewSeparatedSample(),
