@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widget_samples/animation/animated_container_sample.dart';
 import 'package:widget_samples/control/button_sample.dart';
+import 'package:widget_samples/filter/backdrop_filter_sample.dart';
 import 'package:widget_samples/layout/expanded_sample.dart';
 import 'package:widget_samples/layout/wrap_sample.dart';
 import 'package:widget_samples/list/list_tile_sample.dart';
@@ -55,6 +56,9 @@ class GroupList extends StatelessWidget {
       WidgetGroup('ListView', {
         'ListTile': () => const ListTileSample(),
         'ListView.separated': () => const ListViewSeparatedSample(),
+      }),
+      WidgetGroup('Filter', {
+        'BackdropFilter': () => const BackdropFilterSample(),
       }),
     ];
 
