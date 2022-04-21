@@ -9,6 +9,7 @@ class ButtonSample extends StatelessWidget {
       TextButton(onPressed: () => {}, child: const Text('TextButton')),
       OutlinedButton(onPressed: () => {}, child: const Text('OutlinedButton')),
       ElevatedButton(onPressed: () => {}, child: const Text('ElevatedButton')),
+      IconButton(icon: const Icon(Icons.key), onPressed: () => {}),
       const Text(
         'TextButton',
         style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
