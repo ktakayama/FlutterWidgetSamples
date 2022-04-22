@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_samples/animation/animated_container_sample.dart';
+import 'package:widget_samples/animation/fade_transition_sample.dart';
 import 'package:widget_samples/control/button_sample.dart';
 import 'package:widget_samples/filter/backdrop_filter_sample.dart';
 import 'package:widget_samples/layout/expanded_sample.dart';
@@ -56,6 +57,7 @@ class GroupList extends StatelessWidget {
       }),
       WidgetGroup('Animation', {
         'AnimatedContainer': () => const AnimatedContainerSample(),
+        'FadeTransition': () => const FadeTransitionSample(),
       }),
       WidgetGroup('ListView', {
         'ListTile': () => const ListTileSample(),
