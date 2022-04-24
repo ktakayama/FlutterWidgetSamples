@@ -9,6 +9,7 @@ import 'package:widget_samples/layout/wrap_sample.dart';
 import 'package:widget_samples/list/list_tile_sample.dart';
 import 'package:widget_samples/list/list_view_separated_sample.dart';
 import 'package:widget_samples/shape/opacity_sample.dart';
+import 'package:widget_samples/shape/container_sample.dart';
 import 'package:widget_samples/text/text_sample.dart';
 
 void main() {
@@ -56,6 +57,7 @@ class GroupList extends StatelessWidget {
       }),
       WidgetGroup('Shape', {
         'Opacity': () => const OpacitySample(),
+        'Container': () => const ContainerSample(),
       }),
       WidgetGroup('Animation', {
         'AnimatedContainer': () => const AnimatedContainerSample(),
