@@ -5,11 +5,12 @@ import 'package:widget_samples/control/button_sample.dart';
 import 'package:widget_samples/control/menu_button_sample.dart';
 import 'package:widget_samples/filter/backdrop_filter_sample.dart';
 import 'package:widget_samples/layout/expanded_sample.dart';
+import 'package:widget_samples/layout/page_view_sample.dart';
 import 'package:widget_samples/layout/wrap_sample.dart';
 import 'package:widget_samples/list/list_tile_sample.dart';
 import 'package:widget_samples/list/list_view_separated_sample.dart';
-import 'package:widget_samples/shape/opacity_sample.dart';
 import 'package:widget_samples/shape/container_sample.dart';
+import 'package:widget_samples/shape/opacity_sample.dart';
 import 'package:widget_samples/text/text_sample.dart';
 
 void main() {
@@ -54,6 +55,7 @@ class GroupList extends StatelessWidget {
       WidgetGroup('Layout', {
         'Expanded': () => const ExpandedSample(),
         'Wrap': () => const WrapSample(),
+        'PageView': () => const PageViewSample(),
       }),
       WidgetGroup('Shape', {
         'Opacity': () => const OpacitySample(),
