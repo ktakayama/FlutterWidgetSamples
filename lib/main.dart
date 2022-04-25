@@ -82,7 +82,6 @@ class GroupList extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           itemCount: widgets.length,
           itemBuilder: (context, i) => ListTile(
-            // title: Text(widgets[i]['name']),
             title: Text(widgets[i].name),
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute(builder: (context) {
