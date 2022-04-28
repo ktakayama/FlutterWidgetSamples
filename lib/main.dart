@@ -15,6 +15,7 @@ import 'package:widget_samples/list/list_view_separated_sample.dart';
 import 'package:widget_samples/shape/container_sample.dart';
 import 'package:widget_samples/shape/opacity_sample.dart';
 import 'package:widget_samples/text/text_sample.dart';
+import 'package:widget_samples/image/fade_in_image_sample.dart';
 
 void main() {
   runApp(const MyApp());
@@ -74,6 +75,9 @@ class GroupList extends StatelessWidget {
       WidgetGroup('ListView', {
         'ListTile': () => const ListTileSample(),
         'ListView.separated': () => const ListViewSeparatedSample(),
+      }),
+      WidgetGroup('Image', {
+        'FadeInImage': () => const FadeInImageSample(),
       }),
       WidgetGroup('Filter', {
         'BackdropFilter': () => const BackdropFilterSample(),
