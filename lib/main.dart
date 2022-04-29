@@ -9,14 +9,15 @@ import 'package:widget_samples/layout/page_view_sample.dart';
 import 'package:widget_samples/layout/sliver_app_bar.dart';
 import 'package:widget_samples/layout/sliver_list_sample.dart';
 import 'package:widget_samples/layout/table_sample.dart';
+import 'package:widget_samples/image/fade_in_image_sample.dart';
 import 'package:widget_samples/layout/wrap_sample.dart';
 import 'package:widget_samples/list/list_tile_sample.dart';
 import 'package:widget_samples/list/list_view_separated_sample.dart';
 import 'package:widget_samples/shape/clip_r_rect_sample.dart';
 import 'package:widget_samples/shape/container_sample.dart';
+import 'package:widget_samples/shape/custom_paint_sample.dart';
 import 'package:widget_samples/shape/opacity_sample.dart';
 import 'package:widget_samples/text/text_sample.dart';
-import 'package:widget_samples/image/fade_in_image_sample.dart';
 
 void main() {
   runApp(const MyApp());
@@ -69,6 +70,7 @@ class GroupList extends StatelessWidget {
         'Opacity': () => const OpacitySample(),
         'Container': () => const ContainerSample(),
         'ClipRRect': () => const ClipRRectSample(),
+        'CustomPaint': () => const CustomPaintSample(),
       }),
       WidgetGroup('Animation', {
         'AnimatedContainer': () => const AnimatedContainerSample(),
