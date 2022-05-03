@@ -9,6 +9,7 @@ import 'package:widget_samples/image/fade_in_image_sample.dart';
 import 'package:widget_samples/layout/align_sample.dart';
 import 'package:widget_samples/layout/expanded_sample.dart';
 import 'package:widget_samples/layout/page_view_sample.dart';
+import 'package:widget_samples/layout/sized_box_sample.dart';
 import 'package:widget_samples/layout/sliver_app_bar.dart';
 import 'package:widget_samples/layout/sliver_list_sample.dart';
 import 'package:widget_samples/layout/table_sample.dart';
@@ -70,6 +71,7 @@ class GroupList extends StatelessWidget {
         'SliverAppBar': () => const SliverAppBarSample(),
         'SliverList': () => const SliverListSample(),
         'Align': () => const AlignSample(),
+        'SizedBox': () => const SizedBoxSample(),
       }),
       WidgetGroup('Shape', {
         'Opacity': () => const OpacitySample(),
