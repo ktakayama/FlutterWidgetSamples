@@ -23,6 +23,7 @@ import 'package:widget_samples/shape/custom_paint_sample.dart';
 import 'package:widget_samples/shape/fitted_box_sample.dart';
 import 'package:widget_samples/shape/opacity_sample.dart';
 import 'package:widget_samples/text/rich_text_sample.dart';
+import 'package:widget_samples/text/selectable_text_sample.dart';
 import 'package:widget_samples/text/text_sample.dart';
 
 void main() {
@@ -60,6 +61,7 @@ class GroupList extends StatelessWidget {
       WidgetGroup('Text', {
         'Text': () => const TextSample(),
         'RichText': () => const RichTextSample(),
+        'SelectableText': () => const SelectableTextSample(),
       }),
       WidgetGroup('Control', {
         'Button': () => const ButtonSample(),
