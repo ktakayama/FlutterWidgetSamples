@@ -16,6 +16,7 @@ import 'package:widget_samples/layout/sliver_app_bar.dart';
 import 'package:widget_samples/layout/sliver_list_sample.dart';
 import 'package:widget_samples/layout/table_sample.dart';
 import 'package:widget_samples/layout/wrap_sample.dart';
+import 'package:widget_samples/list/checkbox_list_tile_sample.dart';
 import 'package:widget_samples/list/dismissible_sample.dart';
 import 'package:widget_samples/list/list_tile_sample.dart';
 import 'package:widget_samples/list/list_view_separated_sample.dart';
@@ -94,6 +95,7 @@ class GroupList extends StatelessWidget {
       }),
       WidgetGroup('ListView', {
         'ListTile': () => const ListTileSample(),
+        'CheckboxListTile': () => const CheckboxListTileSample(),
         'ListView.separated': () => const ListViewSeparatedSample(),
         'Dismissible': () => const DismissibleSample(),
       }),
