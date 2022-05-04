@@ -118,8 +118,15 @@ class GroupList extends StatelessWidget {
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute(builder: (context) {
                 var body = WidgetList(group: widgets[i]);
-                return Scaffold(
-                    appBar: AppBar(title: Text(widgets[i].name)), body: body);
+                if (body.group.data.length == 1) {
+                  var name = body.group.data.keys.first;
+                  var destination = body.group.data[name]!();
+                  return Scaffold(
+                      appBar: AppBar(title: Text(name)), body: destination);
+                } else {
+                  return Scaffold(
+                      appBar: AppBar(title: Text(widgets[i].name)), body: body);
+                }
               }),
             ),
           ),
