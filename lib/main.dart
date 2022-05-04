@@ -5,6 +5,7 @@ import 'package:widget_samples/animation/transform_sample.dart';
 import 'package:widget_samples/control/button_sample.dart';
 import 'package:widget_samples/control/draggable_sample.dart';
 import 'package:widget_samples/control/menu_button_sample.dart';
+import 'package:widget_samples/data/media_query_sample.dart';
 import 'package:widget_samples/filter/backdrop_filter_sample.dart';
 import 'package:widget_samples/image/fade_in_image_sample.dart';
 import 'package:widget_samples/layout/align_sample.dart';
@@ -101,6 +102,9 @@ class GroupList extends StatelessWidget {
       }),
       WidgetGroup('Filter', {
         'BackdropFilter': () => const BackdropFilterSample(),
+      }),
+      WidgetGroup('Data', {
+        'MediaQuery': () => const MediaQuerySample(),
       }),
     ];
 
