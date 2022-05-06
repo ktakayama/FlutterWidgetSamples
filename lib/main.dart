@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_samples/animation/animated_container_sample.dart';
+import 'package:widget_samples/animation/circular_progress_indicator_sample.dart';
 import 'package:widget_samples/animation/fade_transition_sample.dart';
 import 'package:widget_samples/animation/transform_sample.dart';
 import 'package:widget_samples/control/button_sample.dart';
@@ -94,6 +95,8 @@ class GroupList extends StatelessWidget {
         'AnimatedContainer': () => const AnimatedContainerSample(),
         'FadeTransition': () => const FadeTransitionSample(),
         'Transform': () => const TransformSample(),
+        'CircularProgressIndicator': () =>
+            const CircularProgressIndicatorSample(),
       }),
       WidgetGroup('ListView', {
         'ListTile': () => const ListTileSample(),
