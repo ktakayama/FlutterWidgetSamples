@@ -11,6 +11,7 @@ import 'package:widget_samples/filter/backdrop_filter_sample.dart';
 import 'package:widget_samples/image/fade_in_image_sample.dart';
 import 'package:widget_samples/image/icon_sample.dart';
 import 'package:widget_samples/layout/align_sample.dart';
+import 'package:widget_samples/layout/column_sample.dart';
 import 'package:widget_samples/layout/expanded_sample.dart';
 import 'package:widget_samples/layout/page_view_sample.dart';
 import 'package:widget_samples/layout/row_sample.dart';
@@ -78,6 +79,7 @@ class GroupList extends StatelessWidget {
         'Expanded': () => const ExpandedSample(),
         'Wrap': () => const WrapSample(),
         'Row': () => const RowSample(),
+        'Column': () => const ColumnSample(),
         'PageView': () => const PageViewSample(),
         'Table': () => const TableSample(),
         'SliverAppBar': () => const SliverAppBarSample(),
