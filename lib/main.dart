@@ -19,6 +19,7 @@ import 'package:widget_samples/layout/row_sample.dart';
 import 'package:widget_samples/layout/sized_box_sample.dart';
 import 'package:widget_samples/layout/sliver_app_bar.dart';
 import 'package:widget_samples/layout/sliver_list_sample.dart';
+import 'package:widget_samples/layout/stack_sample.dart';
 import 'package:widget_samples/layout/table_sample.dart';
 import 'package:widget_samples/layout/wrap_sample.dart';
 import 'package:widget_samples/list/checkbox_list_tile_sample.dart';
@@ -81,6 +82,7 @@ class GroupList extends StatelessWidget {
         'Wrap': () => const WrapSample(),
         'Row': () => const RowSample(),
         'Column': () => const ColumnSample(),
+        'Stack': () => const StackSample(),
         'PageView': () => const PageViewSample(),
         'Table': () => const TableSample(),
         'SliverAppBar': () => const SliverAppBarSample(),
