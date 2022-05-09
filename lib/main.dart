@@ -12,6 +12,7 @@ import 'package:widget_samples/image/fade_in_image_sample.dart';
 import 'package:widget_samples/image/icon_sample.dart';
 import 'package:widget_samples/layout/align_sample.dart';
 import 'package:widget_samples/layout/column_sample.dart';
+import 'package:widget_samples/layout/constrained_box_sample.dart';
 import 'package:widget_samples/layout/drawer_sample.dart';
 import 'package:widget_samples/layout/expanded_sample.dart';
 import 'package:widget_samples/layout/page_view_sample.dart';
@@ -89,6 +90,7 @@ class GroupList extends StatelessWidget {
         'SliverList': () => const SliverListSample(),
         'Align': () => const AlignSample(),
         'SizedBox': () => const SizedBoxSample(),
+        'ConstrainedBox': () => const ConstrainedBoxSample(),
         'Drawer': () => const DrawerSample(),
       }),
       WidgetGroup('Shape', {
