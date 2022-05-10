@@ -10,6 +10,7 @@ class FormSample extends StatefulWidget {
 
 class _FormSampleState extends State<FormSample> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  var _dropdownValue = 'default';
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +46,21 @@ class _FormSampleState extends State<FormSample> {
                     return 'TextFormField validation error';
                   }
                   return null;
+                },
+              ),
+              DropdownButtonFormField(
+                items: [
+                  DropdownMenuItem(
+                      child: Text('item1: ' + _dropdownValue), value: 'value1'),
+                  DropdownMenuItem(
+                      child: Text('item2: ' + _dropdownValue), value: 'value2'),
+                  DropdownMenuItem(
+                      child: Text('item3: ' + _dropdownValue), value: 'value3'),
+                ],
+                onChanged: (String? value) => {
+                  setState(() {
+                    _dropdownValue = value ?? '';
+                  })
                 },
               ),
               Padding(
