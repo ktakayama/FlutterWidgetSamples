@@ -22,6 +22,7 @@ import 'package:widget_samples/layout/row_sample.dart';
 import 'package:widget_samples/layout/sized_box_sample.dart';
 import 'package:widget_samples/layout/sliver_app_bar.dart';
 import 'package:widget_samples/layout/sliver_list_sample.dart';
+import 'package:widget_samples/layout/spacer_sample.dart';
 import 'package:widget_samples/layout/stack_sample.dart';
 import 'package:widget_samples/layout/table_sample.dart';
 import 'package:widget_samples/layout/wrap_sample.dart';
@@ -94,6 +95,7 @@ class GroupList extends StatelessWidget {
         'SliverAppBar': () => const SliverAppBarSample(),
         'SliverList': () => const SliverListSample(),
         'Align': () => const AlignSample(),
+        'Spacer': () => const SpacerSample(),
         'SizedBox': () => const SizedBoxSample(),
         'ConstrainedBox': () => const ConstrainedBoxSample(),
         'Drawer': () => const DrawerSample(),
