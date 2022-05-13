@@ -18,6 +18,7 @@ import 'package:widget_samples/layout/constrained_box_sample.dart';
 import 'package:widget_samples/layout/drawer_sample.dart';
 import 'package:widget_samples/layout/expanded_sample.dart';
 import 'package:widget_samples/layout/page_view_sample.dart';
+import 'package:widget_samples/layout/placeholder_sample.dart';
 import 'package:widget_samples/layout/row_sample.dart';
 import 'package:widget_samples/layout/sized_box_sample.dart';
 import 'package:widget_samples/layout/sliver_app_bar.dart';
@@ -97,6 +98,7 @@ class GroupList extends StatelessWidget {
         'Align': () => const AlignSample(),
         'Spacer': () => const SpacerSample(),
         'SizedBox': () => const SizedBoxSample(),
+        'Placeholder': () => const PlaceholderSample(),
         'ConstrainedBox': () => const ConstrainedBoxSample(),
         'Drawer': () => const DrawerSample(),
       }),
