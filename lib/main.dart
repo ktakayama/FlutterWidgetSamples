@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widget_samples/animation/animated_container_sample.dart';
 import 'package:widget_samples/animation/animated_icon_sample.dart';
+import 'package:widget_samples/animation/animated_switcher_sample.dart';
 import 'package:widget_samples/animation/circular_progress_indicator_sample.dart';
 import 'package:widget_samples/animation/fade_transition_sample.dart';
 import 'package:widget_samples/animation/transform_sample.dart';
@@ -112,6 +113,7 @@ class GroupList extends StatelessWidget {
       WidgetGroup('Animation', {
         'AnimatedContainer': () => const AnimatedContainerSample(),
         'AnimatedIcon': () => const AnimatedIconSample(),
+        'AnimatedSwitcher': () => const AnimatedSwitcherSample(),
         'FadeTransition': () => const FadeTransitionSample(),
         'Transform': () => const TransformSample(),
         'CircularProgressIndicator': () =>
