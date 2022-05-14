@@ -49,13 +49,45 @@ class TextSample extends StatelessWidget {
             Shadow(color: Colors.red, offset: Offset(-2, -2))
           ])),
     ];
+    var theme = Theme.of(context).textTheme;
+    var text2 = text.toList();
+    text2.addAll([
+      Text('displayLarge', style: theme.displayLarge),
+      Text('displayMedium', style: theme.displayMedium),
+      Text('displaySmall', style: theme.displaySmall),
+      Text('headline1', style: theme.headline1),
+      Text('headline2', style: theme.headline2),
+      Text('headline3', style: theme.headline3),
+      Text('headline4', style: theme.headline4),
+      Text('headline5', style: theme.headline5),
+      Text('headline6', style: theme.headline6),
+      Text('headlineLarge', style: theme.headlineLarge),
+      Text('headlineMedium', style: theme.headlineMedium),
+      Text('headlineSmall', style: theme.headlineSmall),
+      Text('bodyLarge', style: theme.bodyLarge),
+      Text('bodyMedium', style: theme.bodyMedium),
+      Text('bodySmall', style: theme.bodySmall),
+      Text('bodyText1', style: theme.bodyText1),
+      Text('bodyText2', style: theme.bodyText2),
+      Text('labelLarge', style: theme.labelLarge),
+      Text('labelMedium', style: theme.labelMedium),
+      Text('labelSmall', style: theme.labelSmall),
+      Text('subtitle1', style: theme.subtitle1),
+      Text('subtitle2', style: theme.subtitle2),
+      Text('titleLarge', style: theme.titleLarge),
+      Text('titleMedium', style: theme.titleMedium),
+      Text('titleSmall', style: theme.titleSmall),
+      Text('button', style: theme.button),
+      Text('caption', style: theme.caption),
+      Text('overline', style: theme.overline),
+    ]);
     return SafeArea(
       maintainBottomViewPadding: true,
       child: ListView.separated(
         separatorBuilder: (BuildContext context, int index) => const Divider(),
-        itemCount: text.length,
+        itemCount: text2.length,
         itemBuilder: (context, i) => ListTile(
-          title: text[i],
+          title: text2[i],
         ),
       ),
     );
