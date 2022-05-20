@@ -10,6 +10,7 @@ import 'package:widget_samples/control/draggable_sample.dart';
 import 'package:widget_samples/control/menu_button_sample.dart';
 import 'package:widget_samples/control/show_date_picker_sample.dart';
 import 'package:widget_samples/control/show_date_range_picker_sample.dart';
+import 'package:widget_samples/control/show_modal_bottom_sheet_sample.dart';
 import 'package:widget_samples/data/media_query_sample.dart';
 import 'package:widget_samples/filter/backdrop_filter_sample.dart';
 import 'package:widget_samples/form/form_sample.dart';
@@ -87,6 +88,7 @@ class GroupList extends StatelessWidget {
         'Draggable': () => const DraggableSample(),
         'ShowDatePicker': () => const ShowDatePickerSample(),
         'ShowDateRangePicker': () => const ShowDateRangePickerSample(),
+        'ShowModalBottomSheet': () => const ShowModalBottomSheetSample(),
       }),
       WidgetGroup('Form', {
         'Form': () => const FormSample(),
