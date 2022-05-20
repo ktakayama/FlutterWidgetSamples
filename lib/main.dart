@@ -19,6 +19,7 @@ import 'package:widget_samples/image/icon_sample.dart';
 import 'package:widget_samples/layout/align_sample.dart';
 import 'package:widget_samples/layout/column_sample.dart';
 import 'package:widget_samples/layout/constrained_box_sample.dart';
+import 'package:widget_samples/layout/data_table_sample.dart';
 import 'package:widget_samples/layout/drawer_sample.dart';
 import 'package:widget_samples/layout/expanded_sample.dart';
 import 'package:widget_samples/layout/indexed_stack_sample.dart';
@@ -99,6 +100,7 @@ class GroupList extends StatelessWidget {
         'Row': () => const RowSample(),
         'Column': () => const ColumnSample(),
         'Stack': () => const StackSample(),
+        'DataTable': () => const DataTableSample(),
         'IndexedStack': () => const IndexedStackSample(),
         'PageView': () => const PageViewSample(),
         'Table': () => const TableSample(),
