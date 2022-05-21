@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widget_samples/animation/animated_container_sample.dart';
 import 'package:widget_samples/animation/animated_icon_sample.dart';
@@ -161,7 +162,7 @@ class GroupList extends StatelessWidget {
           itemBuilder: (context, i) => ListTile(
             title: Text(widgets[i].name),
             onTap: () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) {
+              CupertinoPageRoute(builder: (context) {
                 var body = WidgetList(group: widgets[i]);
                 if (body.group.data.length == 1) {
                   var name = body.group.data.keys.first;
@@ -198,7 +199,7 @@ class WidgetList extends StatelessWidget {
         itemBuilder: (context, i) => ListTile(
           title: Text(titles[i]),
           onTap: () => Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) {
+            CupertinoPageRoute(builder: (context) {
               var body = widgets[titles[i]]!();
               return Scaffold(
                   appBar: AppBar(title: Text(body.toString())), body: body);
