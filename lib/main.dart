@@ -15,6 +15,7 @@ import 'package:widget_samples/control/show_modal_bottom_sheet_sample.dart';
 import 'package:widget_samples/control/toggle_buttons_sample.dart';
 import 'package:widget_samples/data/media_query_sample.dart';
 import 'package:widget_samples/filter/backdrop_filter_sample.dart';
+import 'package:widget_samples/filter/color_filter_sample.dart';
 import 'package:widget_samples/form/form_sample.dart';
 import 'package:widget_samples/image/fade_in_image_sample.dart';
 import 'package:widget_samples/image/icon_sample.dart';
@@ -144,6 +145,7 @@ class GroupList extends StatelessWidget {
       }),
       WidgetGroup('Filter', {
         'BackdropFilter': () => const BackdropFilterSample(),
+        'ColorFilter': () => const ColorFilterSample(),
       }),
       WidgetGroup('Data', {
         'MediaQuery': () => const MediaQuerySample(),
