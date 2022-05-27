@@ -19,6 +19,7 @@ import 'package:widget_samples/filter/color_filter_sample.dart';
 import 'package:widget_samples/form/form_sample.dart';
 import 'package:widget_samples/image/fade_in_image_sample.dart';
 import 'package:widget_samples/image/icon_sample.dart';
+import 'package:widget_samples/image/image_sample.dart';
 import 'package:widget_samples/layout/align_sample.dart';
 import 'package:widget_samples/layout/column_sample.dart';
 import 'package:widget_samples/layout/constrained_box_sample.dart';
@@ -140,6 +141,7 @@ class GroupList extends StatelessWidget {
         'Dismissible': () => const DismissibleSample(),
       }),
       WidgetGroup('Image', {
+        'Image': () => const ImageSample(),
         'Icon': () => const IconSample(),
         'FadeInImage': () => const FadeInImageSample(),
       }),
