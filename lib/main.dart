@@ -152,6 +152,7 @@ class GroupList extends StatelessWidget {
       }),
       WidgetGroup('Bar', {
         'AppBar': () => const AppBarSample(),
+        'SliverAppBar': () => const SliverAppBarSample(),
       }),
       WidgetGroup('Data', {
         'MediaQuery': () => const MediaQuerySample(),
