@@ -7,6 +7,7 @@ import 'package:widget_samples/animation/circular_progress_indicator_sample.dart
 import 'package:widget_samples/animation/fade_transition_sample.dart';
 import 'package:widget_samples/animation/transform_sample.dart';
 import 'package:widget_samples/bar/app_bar_sample.dart';
+import 'package:widget_samples/bar/cupertino_navigation_bar_sample.dart';
 import 'package:widget_samples/control/button_sample.dart';
 import 'package:widget_samples/control/draggable_sample.dart';
 import 'package:widget_samples/control/menu_button_sample.dart';
@@ -152,6 +153,7 @@ class GroupList extends StatelessWidget {
       }),
       WidgetGroup('Bar', {
         'AppBar': () => const AppBarSample(),
+        'CupertinoNavigationBar': () => const CupertinoNavigationBarSample(),
         'SliverAppBar': () => const SliverAppBarSample(),
       }),
       WidgetGroup('Data', {
