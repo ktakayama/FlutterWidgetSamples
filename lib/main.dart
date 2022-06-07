@@ -43,6 +43,7 @@ import 'package:widget_samples/list/checkbox_list_tile_sample.dart';
 import 'package:widget_samples/list/dismissible_sample.dart';
 import 'package:widget_samples/list/list_tile_sample.dart';
 import 'package:widget_samples/list/list_view_separated_sample.dart';
+import 'package:widget_samples/list/refresh_indicator_sample.dart';
 import 'package:widget_samples/shape/clip_r_rect_sample.dart';
 import 'package:widget_samples/shape/container_sample.dart';
 import 'package:widget_samples/shape/custom_paint_sample.dart';
@@ -140,6 +141,7 @@ class GroupList extends StatelessWidget {
         'ListTile': () => const ListTileSample(),
         'CheckboxListTile': () => const CheckboxListTileSample(),
         'ListView.separated': () => const ListViewSeparatedSample(),
+        'RefreshIndicator': () => const RefreshIndicatorSample(),
         'Dismissible': () => const DismissibleSample(),
       }),
       WidgetGroup('Image', {
