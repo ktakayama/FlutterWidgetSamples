@@ -9,6 +9,7 @@ import 'package:widget_samples/animation/transform_sample.dart';
 import 'package:widget_samples/bar/app_bar_sample.dart';
 import 'package:widget_samples/bar/cupertino_navigation_bar_sample.dart';
 import 'package:widget_samples/control/button_sample.dart';
+import 'package:widget_samples/control/dialog_sample.dart';
 import 'package:widget_samples/control/draggable_sample.dart';
 import 'package:widget_samples/control/menu_button_sample.dart';
 import 'package:widget_samples/control/show_date_picker_sample.dart';
@@ -99,6 +100,7 @@ class GroupList extends StatelessWidget {
         'ShowDatePicker': () => const ShowDatePickerSample(),
         'ShowDateRangePicker': () => const ShowDateRangePickerSample(),
         'ShowModalBottomSheet': () => const ShowModalBottomSheetSample(),
+        'Dialog': () => const DialogSample(),
       }),
       WidgetGroup('Form', {
         'Form': () => const FormSample(),
