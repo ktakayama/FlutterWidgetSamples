@@ -46,6 +46,7 @@ import 'package:widget_samples/list/list_tile_sample.dart';
 import 'package:widget_samples/list/list_view_separated_sample.dart';
 import 'package:widget_samples/list/radio_list_tile_sample.dart';
 import 'package:widget_samples/list/refresh_indicator_sample.dart';
+import 'package:widget_samples/message/snack_bar_sample.dart';
 import 'package:widget_samples/shape/clip_r_rect_sample.dart';
 import 'package:widget_samples/shape/container_sample.dart';
 import 'package:widget_samples/shape/custom_paint_sample.dart';
@@ -104,6 +105,9 @@ class GroupList extends StatelessWidget {
       }),
       WidgetGroup('Form', {
         'Form': () => const FormSample(),
+      }),
+      WidgetGroup('Message', {
+        'SnackBar': () => const SnackBarSample(),
       }),
       WidgetGroup('Layout', {
         'Expanded': () => const ExpandedSample(),
