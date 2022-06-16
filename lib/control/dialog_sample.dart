@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
@@ -92,6 +93,31 @@ class _DialogSampleState extends State<DialogSample> {
             applicationVersion:
                 'v${packageInfo.version}(${packageInfo.buildNumber})',
             applicationLegalese: 'Kyosuke Takayama',
+          );
+        }),
+      ),
+      DialogGroup(
+        'CupertinoDialog',
+        () => PackageInfo.fromPlatform().then((packageInfo) {
+          showCupertinoDialog(
+            context: context,
+            builder: (context) {
+              return CupertinoAlertDialog(
+                title: const Text('Title'),
+                content: const Text('Content'),
+                actions: [
+                  CupertinoDialogAction(
+                    child: const Text('action'),
+                    onPressed: () => Navigator.pop(context),
+                  ),
+                  CupertinoDialogAction(
+                    isDestructiveAction: true,
+                    child: const Text('destructive'),
+                    onPressed: () => Navigator.pop(context),
+                  ),
+                ],
+              );
+            },
           );
         }),
       ),
