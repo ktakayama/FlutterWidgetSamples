@@ -44,6 +44,7 @@ import 'package:widget_samples/list/checkbox_list_tile_sample.dart';
 import 'package:widget_samples/list/dismissible_sample.dart';
 import 'package:widget_samples/list/list_tile_sample.dart';
 import 'package:widget_samples/list/list_view_separated_sample.dart';
+import 'package:widget_samples/list/list_wheel_scroll_view_sample.dart';
 import 'package:widget_samples/list/radio_list_tile_sample.dart';
 import 'package:widget_samples/list/refresh_indicator_sample.dart';
 import 'package:widget_samples/message/snack_bar_sample.dart';
@@ -149,6 +150,7 @@ class GroupList extends StatelessWidget {
         'CheckboxListTile': () => const CheckboxListTileSample(),
         'RadioListTile': () => const RadioListTileSample(),
         'ListView.separated': () => const ListViewSeparatedSample(),
+        'ListWheelScrollView': () => const ListWheelScrollViewSample(),
         'RefreshIndicator': () => const RefreshIndicatorSample(),
         'Dismissible': () => const DismissibleSample(),
       }),
