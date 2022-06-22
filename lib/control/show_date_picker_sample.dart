@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ShowDatePickerSample extends StatefulWidget {
@@ -55,6 +56,23 @@ class _ShowDatePickerSampleState extends State<ShowDatePickerSample> {
               ).then(_updateResult);
             },
             child: const Text('customize text')),
+        OutlinedButton(
+            onPressed: () {
+              showCupertinoModalPopup(
+                context: context,
+                builder: (context) => Container(
+                  height: 216,
+                  color: Colors.white,
+                  child: CupertinoDatePicker(
+                    initialDateTime: DateTime.now(),
+                    mode: CupertinoDatePickerMode.date,
+                    use24hFormat: true,
+                    onDateTimeChanged: _updateResult,
+                  ),
+                ),
+              );
+            },
+            child: const Text('CupertinoDatePicker')),
       ]
           .map((e) => Padding(padding: const EdgeInsets.all(12), child: e))
           .toList(),
